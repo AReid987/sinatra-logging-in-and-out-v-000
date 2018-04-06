@@ -1,6 +1,3 @@
-require "sinatra"
-require "active_record"
-require "sinatra-activerecord"
 require_relative '../../config/environment'
 
 class ApplicationController < Sinatra::Base
@@ -28,4 +25,3 @@ class ApplicationController < Sinatra::Base
 
 
 end
-
