@@ -1,4 +1,8 @@
+require "sinatra"
+require "active_record"
+require "sinatra-activerecord"
 require_relative '../../config/environment'
+
 class ApplicationController < Sinatra::Base
   configure do
     set :views, Proc.new { File.join(root, "../views/") }
