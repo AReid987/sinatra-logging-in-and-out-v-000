@@ -12,7 +12,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-    if !@user = User.find_by(username: params[:username]).nil?
+    @user = User.find_by(username: params[:username])
+    if !@user.nil?
       session[:id] = @user.id
       redirect '/account'
     end
