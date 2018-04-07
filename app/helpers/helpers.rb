@@ -5,7 +5,7 @@ class Helpers
   end
 
   def self.is_logged_in?
-    
+    binding.pry 
   end
   
 end
