@@ -6,7 +6,7 @@ class Helpers
 
   def self.is_logged_in?(session)
     session[:user_id].nil?
-    binding.pry 
+    #binding.pry 
   end
   
 end
