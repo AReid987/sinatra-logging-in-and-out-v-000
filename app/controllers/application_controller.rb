@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
       @user = Helpers.current_user(session)
       erb :account
     end
-    binding.pry
+    #binding.pry
   end
 
   get '/logout' do
