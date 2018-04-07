@@ -14,6 +14,7 @@ class ApplicationController < Sinatra::Base
   post '/login' do
     if !@user = User.find_by(username: params[:username]).nil?
       session[:id] = @user.id
+    end
     binding.pry
   end
 
