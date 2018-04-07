@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
     @user = User.find_by(username: params[:username])
 
     session[:id] = @user.id
-    binding.pry 
+    #binding.pry
   end
 
   get '/account' do
